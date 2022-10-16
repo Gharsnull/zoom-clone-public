@@ -1,0 +1,34 @@
+<div class="wrapper_menu">
+  <ul class="list-menu">
+    <li class="btn-menu">
+      <button *ngIf="!muted" (click)="toggleMute()">
+        <span>
+          <i class="uil uil-microphone"></i>
+        </span>
+        <span>Mute</span>
+      </button>
+      <button *ngIf="muted" (click)="toggleMute()">
+        <span>
+          <i class="uil uil-microphone-slash"></i>
+        </span>
+        <span>Unmute</span>
+      </button>
+    </li>
+        <li class="btn-menu">
+      <button routerLink="/">
+        <span>
+          <i class="uil uil-estate"></i>
+        </span>
+        <span>Home</span>
+      </button>
+    </li>
+        <li class="btn-menu">
+      <button ngxClipboard [cbContent]=url>
+        <span>
+          <i class="uil uil-share"></i>
+        </span>
+        <span>Share</span>
+      </button>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,6 @@
+<div class="wrapper_video" *ngIf="user">
+  <video [srcObject]="user.userStream" autoplay [muted]="currentPeerId === user.idPeer"></video>
+  <div class="label-name">
+    <span>{{user.userName}}</span>
+  </div>
+</div>

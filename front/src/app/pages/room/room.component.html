@@ -1,0 +1,5 @@
+<div class="wrapper_room">
+  <app-video-player *ngFor="let user of userList" [user]="user" [currentPeerId]="currentPeerId"></app-video-player>
+</div>
+
+<app-bottom-menu (muteEvent)="toggleMute($event)"></app-bottom-menu>
